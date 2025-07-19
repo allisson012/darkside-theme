@@ -1,7 +1,7 @@
 /*!
 Theme Name: darkside-theme
 Theme URI: http://underscores.me/
-Author: Underscores.me
+Author: Allisson
 Author URI: http://underscores.me/
 Description: Description
 Version: 1.0.0
@@ -495,8 +495,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -673,8 +673,8 @@ textarea {
 	top: 0;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li:hover>ul,
+.main-navigation ul ul li.focus>ul {
 	display: block;
 	left: auto;
 }
@@ -683,8 +683,8 @@ textarea {
 	width: 200px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:hover>ul,
+.main-navigation ul li.focus>ul {
 	left: auto;
 }
 
@@ -715,10 +715,8 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
+.site-main .posts-navigation,
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 }
 
@@ -966,4 +964,46 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+.top-bar {
+	background-color: #fff;
+	padding: 10px 20px;
+	position: relative;
+}
+
+.top-bar .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	/* alinha a logo à esquerda */
+	position: relative;
+	height: 60px;
+}
+
+.top-bar .logo img {
+	height: 40px;
+}
+
+/* Centraliza o menu na barra rosa */
+.top-bar .menu {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 20px;
+}
+
+.top-bar .menu a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	transition: color 0.3s;
+}
+
+.top-bar .menu a:hover {
+	color: #fff;
 }
