@@ -1,34 +1,18 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package darkside-theme
- */
+<footer class="site-footer">
+  <div class="container" style="text-align:center; padding: 20px;">
+    <p>&copy; <?php echo date('Y'); ?> WebForce Solutions. Todos os direitos reservados.</p>
+    <div class="footer-icons" style="font-size: 24px; margin-top: 10px;">
+      <a href="mailto:webforceempresa@gmail.com" style="margin: 0 10px; color: inherit;" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener" style="margin: 0 10px; color: inherit;" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/5512991545914" target="_blank" rel="noopener" style="margin: 0 10px; color: inherit;" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
 
-?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'darkside-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'darkside-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'darkside-theme' ), 'darkside-theme', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
-
-</body>
-</html>
+  <?php wp_footer(); ?>
+</footer>
