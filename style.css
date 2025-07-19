@@ -1007,3 +1007,48 @@ textarea {
 .top-bar .menu a:hover {
 	color: #fff;
 }
+
+.hero-banner {
+	position: relative;
+	background-image: url('<?php echo get_template_directory_uri(); ?>/assets/banner2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 120px 20px;
+	color: white;
+	min-height: 600px;
+}
+
+.hero-content {
+	position: absolute;
+	top: 200px;
+	left: 20px;
+	max-width: 750px;
+	color: #000;
+	text-align: left;
+	white-space: normal;
+}
+
+.hero-content h1 {
+	margin: 0 0 10px 0;
+	white-space: normal;
+	text-align: left;
+}
+
+.hero-content p {
+	margin: 0 0 15px 0;
+}
+
+.btn-saiba-mais {
+	display: inline-block;
+	background-color: #f90;
+	color: white;
+	padding: 12px 24px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.email-footer {
+	margin-left: 20px;
+}
