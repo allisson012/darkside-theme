@@ -978,7 +978,6 @@ textarea {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	/* alinha a logo à esquerda */
 	position: relative;
 	height: 60px;
 }
@@ -987,7 +986,6 @@ textarea {
 	height: 40px;
 }
 
-/* Centraliza o menu na barra rosa */
 .top-bar .menu {
 	position: absolute;
 	left: 50%;
@@ -1006,6 +1004,36 @@ textarea {
 
 .top-bar .menu a:hover {
 	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.top-bar {
+		padding: 10px;
+	}
+
+	.top-bar .container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+	}
+
+	.top-bar .logo img {
+		height: 30px;
+		margin-bottom: 10px;
+	}
+
+	.top-bar .menu {
+		position: static;
+		transform: none;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 10px;
+	}
+
+	.top-bar .menu a {
+		font-size: 16px;
+	}
 }
 
 .hero-banner {
@@ -1051,4 +1079,142 @@ textarea {
 
 .email-footer {
 	margin-left: 20px;
+}
+
+.sobre {
+	padding: 60px 20px;
+	background-color: #fff;
+}
+
+.sobre-container {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	max-width: 1200px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.about-img {
+	width: 500px;
+	max-width: 100%;
+	border-radius: 12px;
+	object-fit: cover;
+}
+
+.sobre-texto {
+	flex: 1;
+	min-width: 280px;
+}
+
+.sobre-texto h2 {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.sobre-texto p {
+	font-size: 18px;
+	line-height: 1.6;
+	color: #444;
+}
+
+.servicos {
+	padding: 40px 20px;
+	text-align: center;
+}
+
+.servicos-topo {
+	margin-bottom: 40px;
+}
+
+.servicos-titulo {
+	font-size: 32px;
+	color: #333;
+}
+
+.servicos-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	width: calc(33.333% - 20px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.contato {
+	background-color: #f9f9f9;
+	padding: 60px 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.contato-container {
+	display: flex;
+	gap: 40px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	max-width: 1000px;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.contato-mapa {
+	flex: 1;
+	min-width: 300px;
+}
+
+.contato-form {
+	flex: 1;
+	min-width: 300px;
+}
+
+.contato-form h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+
+.wpcf7 input,
+.wpcf7 textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+
+.wpcf7-submit {
+	background-color: #f7c948;
+	color: #000;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.wpcf7-submit:hover {
+	background-color: #f4b600;
+}
+
+@media (max-width: 768px) {
+	.contato-container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.contato-mapa iframe {
+		height: 250px;
+	}
 }
