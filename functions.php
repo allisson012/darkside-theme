@@ -154,6 +154,8 @@ add_action( 'wp_enqueue_scripts', 'darkside_theme_scripts' );
  */
 require get_template_directory() . '/inc/custom-header.php';
 
+require_once get_template_directory() . '/classes/blog.php';
+
 /**
  * Custom template tags for this theme.
  */

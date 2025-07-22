@@ -10,6 +10,8 @@
 
     <?php get_template_part('template-parts/contato'); ?>
 
+    <?php get_template_part('template-parts/blog'); ?>
+
 </main>
 
 <?php get_footer();?>
