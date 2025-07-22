@@ -37,11 +37,11 @@
 
 			
 			<nav class="menu">
-				<a href="<?php echo home_url(); ?>">Home</a>
-				<a href="<?php echo home_url('/about'); ?>">About</a>
-				<a href="<?php echo home_url('/services'); ?>">Services</a>
-				<a href="<?php echo home_url('index.php/contact'); ?>">Contact</a>
-			</nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
 		</div>
 			
 		</div>
