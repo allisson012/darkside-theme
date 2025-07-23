@@ -1,70 +1,52 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+Instruções de Instalação
 
-_s
-===
+Pré-requisitos
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+WordPress instalado (local ou em servidor).
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+Plugin Advanced Custom Fields (ACF) instalado e ativado.
 
-* A modern workflow with a pre-made command-line interface to turn your project into a more pleasant experience.
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A custom header implementation in `inc/custom-header.php`. Just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample layouts in `sass/layouts/` made using CSS Grid for a sidebar on either side of your content. Just uncomment the layout of your choice in `sass/style.scss`.
-Note: `.no-sidebar` styles are automatically loaded.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Full support for `WooCommerce plugin` integration with hooks in `inc/woocommerce.php`, styling override woocommerce.css with product gallery features (zoom, swipe, lightbox) enabled.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+Definir uma página estática como “Página Inicial” nas configurações do WordPress.
 
-Installation
----------------
+Instalação do Tema
 
-### Requirements
+Copie a pasta webforce-theme para wp-content/themes/.
 
-`_s` requires the following dependencies:
+No painel do WordPress, vá até “Aparência > Temas” e ative o tema “WebForce Solutions”.
 
-- [Node.js](https://nodejs.org/)
-- [Composer](https://getcomposer.org/)
+Configuração dos Campos ACF
+Crie um Grupo de Campos no ACF e relacione-o à página inicial. Campos necessários:
 
-### Quick Start
+titulo_hero (Texto)
 
-Clone or download this repository, change its name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a six-step find and replace on the name in all the templates.
+descricao_sobre (Área de texto)
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain and replace with: `'megatherium-is-awesome'`.
-2. Search for `_s_` to capture all the functions names and replace with: `megatherium_is_awesome_`.
-3. Search for `Text Domain: _s` in `style.css` and replace with: `Text Domain: megatherium-is-awesome`.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
-5. Search for `_s-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
-6. Search for `_S_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
+link_instagram (Link)
 
-Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+link_email (Link)
 
-### Setup
+link_whatsapp (Link)
 
-To start using all the tools that come with `_s`  you need to install the necessary Node.js and Composer dependencies :
+direitos_autorais (Texto)
 
-```sh
-$ composer install
-$ npm install
-```
+Configuração das Páginas
 
-### Available CLI commands
+Defina a página “Home” como página inicial.
 
-`_s` comes packed with CLI commands tailored for WordPress theme development :
+Crie uma página chamada “Serviços” e selecione o template “Página de Serviços”.
 
-- `composer lint:wpcs` : checks all PHP files against [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/).
-- `composer lint:php` : checks all PHP files for syntax errors.
-- `composer make-pot` : generates a .pot file in the `languages/` directory.
-- `npm run compile:css` : compiles SASS files to css.
-- `npm run compile:rtl` : generates an RTL stylesheet.
-- `npm run watch` : watches all SASS files and recompiles them to css when they change.
-- `npm run lint:scss` : checks all SASS files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/).
-- `npm run lint:js` : checks all JavaScript files against [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
-- `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
+Funcionalidades do Tema
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+Layout responsivo com HTML5 e CSS3.
 
-Good luck!
+Integração com Font Awesome 6.5 via CDN.
+
+Campos dinâmicos usando ACF para conteúdo personalizado.
+
+Rodapé customizado com links para redes sociais e texto configurável.
+
+Organização modular com template-parts, facilitando manutenção e escalabilidade.
+
+Compatível com WordPress 6+.
+
+Desenvolvido por Allisson Castilho
