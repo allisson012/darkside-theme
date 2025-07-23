@@ -1077,8 +1077,26 @@ textarea {
 	font-weight: bold;
 }
 
-.email-footer {
-	margin-left: 20px;
+.rodape {
+	text-align: center;
+
+	padding: 20px 0;
+}
+
+.rodape .redes-sociais {
+	margin-top: 10px;
+}
+
+.rodape .redes-sociais a {
+	margin: 0 15px;
+	font-size: 32px;
+	color: #000;
+	transition: color 0.3s ease;
+	display: inline-block;
+}
+
+.rodape .redes-sociais a:hover {
+	color: #e1306c;
 }
 
 .sobre {
@@ -1144,10 +1162,41 @@ textarea {
 	border: 1px solid #ddd;
 	border-radius: 8px;
 	padding: 20px;
+	flex: 1 1 calc(33.333% - 20px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	min-width: 280px;
+}
+
+@media (max-width: 768px) {
+	.servicos-cards {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card {
+		width: 100%;
+		max-width: 400px;
+		flex: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.servicos-titulo {
+		font-size: 24px;
+	}
+}
+
+.card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
 	width: calc(33.333% - 20px);
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	text-align: center;
 }
+
 
 .contato {
 	background-color: #f9f9f9;
