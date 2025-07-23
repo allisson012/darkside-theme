@@ -1069,7 +1069,6 @@ textarea {
 
 .btn-saiba-mais {
 	display: inline-block;
-	background-color: #f90;
 	color: white;
 	padding: 12px 24px;
 	text-decoration: none;
@@ -1333,4 +1332,132 @@ textarea {
 .noticia-conteudo p {
 	font-size: 0.95em;
 	line-height: 1.4;
+}
+
+.banner-ofertas {
+	position: relative;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.banner-overlay {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-titulo {
+	position: relative;
+	color: #fff;
+	font-size: 2.8rem;
+	font-weight: 700;
+	text-align: center;
+	z-index: 1;
+}
+
+#ofertas {
+	padding: 60px 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.ofertas-topo {
+	margin-bottom: 40px;
+}
+
+.ofertas-titulo {
+	font-size: 2.6rem;
+	color: #222;
+	margin-bottom: 12px;
+}
+
+.ofertas-subtitulo {
+	font-size: 1.2rem;
+	color: #555;
+	font-weight: 400;
+}
+
+.ofertas-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 24px;
+}
+
+.oferta-card {
+	background: #fff;
+	box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+	border-radius: 10px;
+	width: 280px;
+	padding: 20px;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.oferta-card:hover {
+	transform: translateY(-6px);
+}
+
+.oferta-card img {
+	width: 100%;
+	border-radius: 8px;
+	margin-bottom: 16px;
+}
+
+.oferta-card-title {
+	font-size: 1.6rem;
+	margin-bottom: 8px;
+	color: #111;
+}
+
+.oferta-card-desc {
+	font-size: 1rem;
+	color: #666;
+	line-height: 1.4;
+}
+
+.diferenciais {
+	background-color: #f9f9f9;
+	padding: 50px 20px;
+	text-align: center;
+}
+
+.diferenciais-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.diferenciais-titulo {
+	font-size: 2rem;
+	margin-bottom: 24px;
+	color: #222;
+}
+
+.diferenciais-lista {
+	list-style: none;
+	padding: 0;
+	font-size: 1.1rem;
+	color: #444;
+}
+
+.diferenciais-lista li {
+	margin-bottom: 12px;
+	line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+	.ofertas-cards {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.oferta-card {
+		width: 90%;
+	}
 }
