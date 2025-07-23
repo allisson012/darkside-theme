@@ -166,6 +166,11 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
+function carregar_fontawesome() {
+	wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+  }
+  add_action('wp_enqueue_scripts', 'carregar_fontawesome');
+
 /**
  * Customizer additions.
  */
